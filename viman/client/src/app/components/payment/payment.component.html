@@ -1,0 +1,99 @@
+<div class="menu">
+  <a href="">
+    <img src="assets/image/uplogg.png">
+  </a>
+
+  <ul>
+
+
+    <li><a href="aboutus">ABOUT US</a></li>
+    <li><a href="faqs">FAQs</a></li>
+    <li><a href="associates">ASSOCIATES</a></li>
+
+  </ul>
+
+</div>
+
+<div class="banner-text">
+  <div class="slidebox">
+    <h2>TOTAL BILL</h2>
+
+    <div class="main">
+
+
+      <div class="slider">
+
+        <figure>
+          <img src="assets/image/{{flight.photo}}">
+        </figure>
+
+      </div>
+    </div>
+
+    <p>Base Price = {{amount}}</p>
+    <p>OBS charge (18%) ={{fee}} </p>
+    <p>GST(5%) = {{gst}}</p>
+
+    <h3>Total amount = {{totalAmount}}</h3>
+  </div>
+
+  <div class="loginbox">
+    <div class="slip">
+
+      <h1>PAYMENT GATEWAY</h1>
+      <img class="vis" src="assets/image/flight/visa.png"><img src="assets/image/flight/master.png"><img
+        src="assets/image/flight/rupay.png"><img src="assets/image/flight/maestro.png">
+      <form [formGroup]="addForm" (ngSubmit)="paynow()">
+        <div class="form-group row">
+
+          <p>
+            NAME ON CARD
+          </p>
+          <br>
+
+
+          <input type="text" class="form-control " placeholder="Enter full Name" formControlName="fname" />
+
+
+
+
+          <!-- first name done  -->
+          <p>
+            CARD NUMBER
+          </p>
+
+          <input type="text" class="form-control " placeholder="1111-2222-3333-4444" formControlName="card" />
+
+
+          <p>
+            VALID THROUGH
+          </p>
+
+          <input type="text1" class="form-control " placeholder="MM" formControlName="month" />
+
+
+          <input type="text2" class="form-control " placeholder="YYYY" formControlName="year" />
+
+
+          <p>
+
+            CVV/CVC (On card)
+          </p>
+
+          <input type="text2" class="form-control " placeholder="XXX" formControlName="cvv" />
+
+
+          <div class="text-right">
+            <button class="btn btn-outline-success" type="submit">PAY {{totalAmount}} rs</button>
+
+          </div>
+        </div>
+        <div *ngIf="this.addForm.Invalid">
+          <div class="text-danger">
+            <h6> Invalid Email or Password </h6>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

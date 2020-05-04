@@ -1,0 +1,102 @@
+.menu{
+  width: 100%;
+  font-family: sans-serif;
+}
+a {
+  color: rgb(252, 252, 252);
+}
+.menu img{
+  height: 50px;
+  margin: 9px 20px;
+  cursor: pointer;
+}
+.menu ul{
+  display: inline-flex;
+  color: rgb(255, 255, 255);
+  list-style: none;
+  right: 02px;
+  top:17px;
+  position: absolute;
+}
+.menu ul li{
+  
+  margin-right: 40px;
+  cursor: pointer;
+  font-size: 22px;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+  }
+  .services{
+    background: transparent;
+    text-align: center;
+  }
+  .services h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color:  rgba(136,8,29);
+      font-weight: lighter;
+    text-align: center;
+    font-size: 40px;
+    display: inline-block;
+   
+    text-transform: uppercase;
+    border-bottom: 1px solid #130f0f;
+    
+    padding-bottom: 10px;
+    margin-top: 40px;
+  }
+  .cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .service{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .service img{
+    height: 80px;
+    margin-bottom: 20px;
+  
+   
+}
+  .service:hover{
+    background: rgba(221, 221, 221, 0.418);
+  }
+ .service a {
+    color: rgb(136, 8, 29);
+  }
+
+  .service h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(136, 8, 29);
+    font-weight: 500;
+    margin: 0;
+  }
+  .service p{
+    color: rgba(128, 118, 118, 0.795);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 800px) {
+    .service{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .service{
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,118 @@
+.menu{
+    width: 100%;
+    font-family: sans-serif;
+}
+a {
+    color: rgb(252, 252, 252);
+  }
+  p{
+      color:white;
+  }
+.menu img{
+    height: 50px;
+    margin: 9px 20px;
+    cursor: pointer;
+}
+.menu ul{
+    display: inline-flex;
+    color: rgb(136, 8, 29);
+    list-style: none;
+    right: 02px;
+    top:17px;
+    position: absolute;
+}
+.menu ul li{
+    
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.loginbox{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)),url(aio.jpeg);
+    min-height: 90vh;
+    background-attachment: fixed;
+   
+}
+.loginbox h1{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+       margin-top: 35px;
+       margin-bottom: 10px;
+        color: rgba(255, 255, 255, 0.562);
+      text-align: center;
+      font-size: 38px;
+}
+
+.loginbox p{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+       margin-top: 35px;
+       margin-bottom: 10px;
+        color: rgba(255, 255, 255, 0.185);
+      text-align: center;
+      font-size: 55px;
+}
+.loginbox a{
+    text-decoration: none;
+    margin-left: 561px;
+    font-size: 17px;
+    line-height: 20px;
+    padding-bottom: 100px;
+    color: darkgrey;
+}
+
+.loginbox a:hover{
+    color: rgb(136, 8, 29);
+}
+.row{
+
+    background-color: rgba(48, 48, 48, 0.192);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 1400px;
+    height: 120px;
+    margin-right: 20px;
+    color: white;
+}
+
+.row img{
+    margin-top: 11px;
+    margin-left: 50px;
+    height: 90px;
+    width: 90px;
+}
+.row h4{
+    font-size: 20px;
+    
+    
+    margin-left: 60px;
+    
+}
+.row p{
+    margin-top: 28px;
+    color: rgb(136, 8, 29);
+    font-size: 10px;
+    margin-left: 60px;
+}
+
+.row button[class = "btn btn-link"]{
+    margin-top: 38px;
+   margin-left: 50px;
+    border:none;
+    outline: none;
+    
+    
+    height: 35px;
+    width: 100px;
+    background: rgb(136, 8, 29);
+    color: #fff;
+    font-size: 18px;
+   border-radius: 20px;
+  }
+  .row button[class = "btn btn-link"]:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.767);
+    color: rgb(136, 8, 29);
+}

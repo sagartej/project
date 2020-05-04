@@ -1,0 +1,123 @@
+<div class="menu">
+  <a href="">
+    <img src="assets/image/uplogg.png">
+  </a>
+
+  <ul>
+
+
+    <li><a href="aboutus">ABOUT US</a></li>
+    <li><a href="faqs">FAQs</a></li>
+    <li><a href="associates">ASSOCIATES</a></li>
+
+  </ul>
+
+</div>
+<div class="banner-text">
+
+
+  <div class="loginbox">
+
+    <h1>PASSENGER'S DETAILS</h1>
+    <form [formGroup]="passForm" (ngSubmit)="pay()">
+      <div class="form-group row">
+
+        <p>
+          FIRST NAME
+        </p>
+        <br>
+
+        <div class="col-lg-8">
+          <input type="text" class="form-control " formControlName="fname" />
+
+          <div *ngIf="submitted && passForm.controls.fname.errors">
+            <div class="text-danger" *ngIf="passForm.controls.fname.errors.required">
+              <h6>Mandatory field!</h6>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- first name done  -->
+
+
+
+
+        <p>
+          LAST NAME
+        </p>
+        <div class="col-lg-8">
+          <input type="text" class="form-control " formControlName="lname" />
+
+          <div *ngIf="submitted && passForm.controls.lname.errors">
+            <div class="text-danger" *ngIf="passForm.controls.lname.errors.required">
+              <h6> Mandatory Field!</h6>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <!--  -->
+
+        <p>
+          DATE OF BIRTH
+          <p>
+            <div class="col-lg-8">
+              <input type="date" class="form-control " formControlName="dob" />
+
+              <div *ngIf="submitted && passForm.controls.dob.errors">
+                <div class="text-danger" *ngIf="passForm.controls.dob.errors.required">
+                  <h6> Mandatory field!</h6>
+                </div>
+
+              </div>
+
+            </div><br>
+
+
+
+            <div class="text-right">
+              <button class="btn btn-outline-success" type="submit">PAY</button>
+
+
+
+            </div>
+      </div>
+    </form>
+
+
+
+    <a href="search">Back to search flights</a>
+
+  </div>
+
+  <div class="slidebox">
+    <h2>FLIGHT DETAILS</h2>
+
+    <div class="main">
+
+
+      <div class="slider">
+
+        <figure>
+          <img src="assets/image/flight/{{flight.photo}}">
+        </figure>
+
+      </div>
+    </div>
+
+    <h3>FLIGHT ID- {{flight.flightId}}</h3>
+    <p>{{flight.airline}} Airlines </p>
+    <p>Date - {{flight.fdate}}</p>
+    <p>Departure at {{flight.dept}} from {{flight.source}}</p>
+    <p>Arrival at {{flight.arr}} at {{flight.desti}}</p>
+    <p>Baggage {{flight.baggage}}kg and meal is {{flight.meal}}</p>
+    <p>Cost - {{flight.fare}}</p>
+  </div>
+
+
+
+
+</div>

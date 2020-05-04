@@ -1,0 +1,53 @@
+<div class="menu">
+  <a href="">
+    <img src="assets/image/uplogg.png">
+  </a>
+
+  <ul>
+
+    <li><a href="login">LOG IN</a></li>
+    <li><a href="aboutus">ABOUT US</a></li>
+    <li><a href="faqs">FAQs</a></li>
+    <li><a href="associates">ASSOCIATES</a></li>
+
+  </ul>
+
+</div>
+<div class="banner-text">
+  <div class="loginbox">
+
+    <h1>FEEDBACK & SUGGESTIONS</h1>
+    <form [formGroup]="addForm" (ngSubmit)="submitf()">
+      <div class="form-group row">
+        <p>
+          WRITE HERE:
+        </p>
+        <br>
+
+        <div class="col-lg-8">
+          <textarea type="text" rows="4" cols="3" formControlName="feed"></textarea>
+
+
+          <div *ngIf="submitted && addForm.controls.feed.errors">
+            <div class="text-danger" *ngIf="addForm.controls.feed.errors.required">
+              <h6>You can't leave this empty!</h6>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="text-right">
+          <button class="btn btn-outline-success" type="submit">SUBMIT</button><br>
+          <a href="profile">Back to services</a><br>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+
+
+</div>
+

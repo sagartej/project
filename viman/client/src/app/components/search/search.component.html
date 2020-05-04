@@ -1,0 +1,125 @@
+<div class="menu">
+  <a href="">
+    <img src="assets/image/uplogg.png">
+  </a>
+
+  <ul>
+
+
+    <li><a href="aboutus">ABOUT US</a></li>
+    <li><a href="faqs">FAQs</a></li>
+    <li><a href="associates">ASSOCIATES</a></li>
+
+  </ul>
+
+</div>
+<div class="banner-text">
+  <div class="loginbox">
+
+    <h1>SEARCH FLIGHTS</h1>
+    <form [formGroup]="searchForm" (ngSubmit)="searchPlane()">
+      <div class="form-group row">
+
+        <p>
+          FLYING FROM
+        </p>
+        <br>
+
+        <div class="col-lg-8">
+          <input type="text" class="form-control " formControlName="from" />
+
+          <div *ngIf="submitted && searchForm.controls.from.errors">
+            <div class="text-danger" *ngIf="searchForm.controls.from.errors.required">
+              <h6>Mandatory field!</h6>
+            </div>
+            <div class="text-danger" *ngIf="searchForm.controls.from.errors.pattern">
+              <h6> Use lower case alphabets only </h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- first name done  -->
+
+
+
+
+        <p>
+          FLYING TO
+        </p>
+        <div class="col-lg-8">
+          <input type="text" class="form-control " formControlName="to" />
+
+          <div *ngIf="submitted && searchForm.controls.to.errors">
+            <div class="text-danger" *ngIf="searchForm.controls.to.errors.required">
+              <h6> Mandatory Field!</h6>
+            </div>
+            <div class="text-danger" *ngIf="searchForm.controls.to.errors.pattern">
+              <h6> Use lower case alphabets only </h6>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <!--  -->
+
+        <p>
+          DATE
+          <p>
+            <div class="col-lg-8">
+              <input type="date" class="form-control " formControlName="date" />
+
+              <div *ngIf="submitted && searchForm.controls.date.errors">
+                <div class="text-danger" *ngIf="searchForm.controls.date.errors.required">
+                  <h6> Mandatory field!</h6>
+                </div>
+
+              </div>
+
+            </div><br>
+
+
+          
+
+            <div class="text-right">
+              <button class="btn btn-outline-success" type="submit">SEARCH</button>
+              <br>
+              <a href="signup">Back to services</a><br>
+
+
+            </div>
+      </div>
+    </form>
+  </div>
+  <div class="slidebox">
+    <h2>OUR PROUD PARTNER AIRLINES</h2>
+
+    <div class="main">
+
+
+      <div class="slider">
+
+        <figure>
+          <img src="assets/image/air1.jpg">
+          <img src="assets/image/air2.jpeg">
+          <img src="assets/image/air3.jpeg">
+          <img src="assets/image/air4.jpeg">
+          <img src="assets/image/air5.jpeg">
+
+
+
+
+        </figure>
+
+      </div>
+    </div>
+    <p> With unmatched luxurious offerings and world class services, Viman has been successful in
+      creating brand loyalists in a short span of time. Owing to the same,
+      Viman has won the trust of various domestic airlines looking to grow their presence in India. </p>
+  </div>
+
+
+
+
+</div>

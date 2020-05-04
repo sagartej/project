@@ -1,0 +1,126 @@
+.menu{
+    width: 100%;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+a {
+    color: rgb(252, 252, 252);
+  }
+a:hover{
+   
+    border: none;
+    color: rgb(136, 8, 29);
+    transition: .3s;
+}
+.menu img{
+    height: 60px;
+    margin: 9px 20px;
+    cursor: pointer;
+}
+.menu ul{
+    display: inline-flex;
+    color: rgb(136, 8, 29);
+    list-style: none;
+    right: 02px;
+    top:17px;
+    position: absolute;
+}
+.menu ul li{
+    
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.banner-text{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.637),rgba(0, 0, 0, 0.74)),url(aio.jpeg);
+    height: 100vh;
+   
+    
+    
+   
+    font-family: sans-serif;
+   
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+    
+    color: rgba(255, 255, 255, 0.678);
+    margin: 0% auto 0;
+  
+}
+.banner-text img{
+    height: 190px;
+  
+   
+}
+
+.banner-text h1{
+    font-size: 60px;
+}
+.banner-text p{
+    
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin: 40px 0 50px;
+}
+.banner-text ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.banner-text ul li{
+    margin-right: 25px;
+    position: relative;
+}
+
+.banner-text ul li a{
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    background-color: rgba(0, 0, 0, 0.658);
+    
+    display: block;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.banner-text ul li a:hover{
+    background-color:  rgb(136, 8, 29);
+    border: none;
+    color: black;
+    transition: .3s;
+}
+.banner-text ul li button{
+    text-decoration: none;
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(250, 248, 248);
+    display: block;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.banner-text ul li button:hover{
+    background-color:  rgb(136, 8, 29);
+    transition: .3s;
+}
+
+.banner-text ul li span{
+    display: block;
+    width: 0;
+    height: 100%;
+    background: brown;
+    top: 0;
+    position: absolute;
+    transition: .3s;
+    z-index: -1;
+}
+.banner-text ul li:hover span{
+    width: 100;
+}

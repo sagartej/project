@@ -1,0 +1,161 @@
+<div class="menu">
+  <a href="">
+    <img src="assets/image/uplogg.png">
+  </a>
+
+  <ul>
+
+
+    <li><a href="aboutus">ABOUT US</a></li>
+    <li><a href="faqs">FAQs</a></li>
+    <li><a href="associates">ASSOCIATES</a></li>
+
+  </ul>
+
+</div>
+
+<div class="banner-text">
+  <div class="loginbox">
+
+    <h1>SIGN UP</h1>
+
+    <form [formGroup]="addForm" (ngSubmit)="addUser()">
+      <div class="form-group row">
+
+        <p>
+          NAME
+        </p>
+        <br>
+
+        <div class="col-lg-8">
+          <input type="text" class="form-control " placeholder="Enter full Name" formControlName="fname" />
+
+          <div *ngIf="submitted && addForm.controls.fname.errors">
+            <div class="text-danger" *ngIf="addForm.controls.fname.errors.required">
+              <h6>Name is mandatory!</h6>
+            </div>
+            <div class="text-danger" *ngIf="addForm.controls.fname.errors.pattern">
+              <h6> Name must only contain alphabets </h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- first name done  -->
+
+
+
+
+
+
+
+        <p>
+          MOBILE
+        </p>
+        <div class="col-lg-8">
+          <input type="text" class="form-control " placeholder="Mobile Number" formControlName="phone" />
+
+          <div *ngIf="submitted && addForm.controls.phone.errors">
+            <div class="text-danger" *ngIf="addForm.controls.phone.errors.required">
+              <h6> Mobile number is mandatory !</h6>
+            </div>
+            <div class="text-danger" *ngIf="addForm.controls.phone.errors.pattern">
+              <h6> Mobile no. should be 10 digits and numeric</h6>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--  -->
+
+        <p>
+          EMAIL
+          <p>
+            <div class="col-lg-8">
+              <input type="text" class="form-control " placeholder="Email" formControlName="email" />
+
+              <div *ngIf="submitted && addForm.controls.email.errors">
+                <div class="text-danger" *ngIf="addForm.controls.email.errors.required">
+                  <h6> Email is mandatory!</h6>
+                </div>
+                <div class="text-danger" *ngIf="addForm.controls.email.errors.email">
+                  <h6> Invalid Email address!</h6>
+                </div>
+              </div>
+
+            </div><br>
+
+            <p>
+              PASSWORD <br>
+            </p>
+            <div class="col-lg-8">
+              <input type="password" class="form-control " placeholder="Password" formControlName="password" />
+              <div *ngIf="submitted && addForm.controls.password.errors">
+                <div class="text-danger" *ngIf="addForm.controls.password.errors.required">
+                  <h6> Password is mandatory !</h6>
+                </div>
+              </div>
+            </div>
+
+
+            <p>
+              CONFIRM PASSWORD <br>
+            </p>
+            <div class="col-lg-8">
+              <input type="password" class="form-control " placeholder="Confirm Password" formControlName="cpassword" />
+              <div *ngIf="submitted && addForm.controls.cpassword.errors">
+                <div class="text-danger" *ngIf="addForm.controls.cpassword.errors.required">
+                  <h6> Confirm Password is mandatory !</h6>
+                </div>
+                <div class="text-danger" *ngIf=" addForm.controls.cpassword.errors.mustMatch">
+                  <h6>Passwords must match</h6>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+
+            <div class="text-right">
+              <button class="btn btn-outline-success" type="submit">Save</button>
+              <button class="btn btn-outline-danger" type="reset">Cancel</button><br>
+
+
+              <a href="login">Already have an account</a><br>
+              <div class="t">
+                <h5>All fields are mandatory </h5>
+              </div>
+
+            </div>
+      </div>
+    </form>
+  </div>
+  <div class="slidebox">
+    <h2>CONNECTING MAJOR CITIES OF INDIA</h2>
+
+    <div class="main">
+
+
+      <div class="slider">
+
+        <figure>
+          <img src="assets/image/mumbai.jpeg">
+          <img src="assets/image/pune.jpeg">
+          <img src="assets/image/jaipur.jpeg">
+          <img src="assets/image/delhi.jpeg">
+          <img src="assets/image/banglore.jpeg">
+   
+        </figure>
+
+      </div>
+    </div>
+    <p>We have covered almost all the leading cities of the country including Mumbai, Chennai, Banglore, Delhi, Pune,
+      Banglore, Indore, Kolkata, Jaipur,
+      Hyderabad and other considerable cities.So just go ahead and register yourself on viman. You just need to give us
+      your email, mobile number, name and create
+      a password. Your private data will be used for registeration purpose only and will not be exposed to anyone.
+      Once you've registered you won't need to register again just signin in and you'll be able to take advantage of
+      all our services. </p>
+  </div>
+
+</div>
+ 
+  

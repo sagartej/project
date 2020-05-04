@@ -1,0 +1,93 @@
+<div class="menu">
+    <a href="">
+        <img src="assets/image/uplogg.png">
+    </a>
+
+    <ul>
+    </ul>
+
+</div>
+<div class="loginbox">
+
+    <h1 [hidden]="!temp">FLIGHTS LIST</h1><br>
+    <p [hidden]="temp">
+        SORRY! NO FLIGHTS AVAILABLE ACCORDING TO YOUR DATA
+    </p><br>
+
+    <table>
+        <tr>
+            <div class="col" *ngFor="let flight of flights">
+
+                <div class="row">
+
+
+                    <td>
+                        <div class="column">
+                            <img BORDER="0" ALIGN="Left" src="assets/image/{{flight.photo}}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <p>FLIGHT ID</p>
+                            <h4>{{flight.flightId}}</h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <p>AIRLINES</p>
+                            <h4>{{flight.airline}} </h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <p>FROM</p>
+                            <h4>{{flight.source}} </h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <p>TO</p>
+                            <h4>{{flight.desti}} </h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <p>DEPARTURE</p>
+                            <h4>{{flight.dept}} </h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <p>ARRIVAL</p>
+                            <h4>{{flight.arr}} </h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <p>BAGGAGE</p>
+                            <h4>{{flight.baggage}} kg </h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <p>COST</p>
+                            <h4>{{flight.fare | currency:'INR'}}</h4>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column">
+                            <!--<a href="#" class="btn btn-primary">Play</a>-->
+                            <button class="btn btn-link" (click)="buynow(flight)">Buy Now</button>
+                        </div>
+                    </td>
+                </div>
+
+
+                <br>
+
+            </div>
+        </tr>
+    </table>
+    <a href="search">BACK TO SEARCH FLIGHTS</a>
+</div>
+

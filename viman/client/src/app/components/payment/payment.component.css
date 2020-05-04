@@ -1,0 +1,272 @@
+.menu{
+    width: 100%;
+    font-family: sans-serif;
+  }
+  a {
+    color: rgb(252, 252, 252);
+  }
+  .menu img{
+    height: 50px;
+    margin: 9px 20px;
+    cursor: pointer;
+  }
+  .menu ul{
+    display: inline-flex;
+    color: rgb(136, 8, 29);
+    list-style: none;
+    right: 02px;
+    top:17px;
+    position: absolute;
+  }
+  .menu ul li{
+    
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .banner-text{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.945),rgba(0, 0, 0, 0.938)),url(aio.jpeg);
+      
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+     
+      min-height: 140.5vh;
+     
+      background-repeat: no-repeat; /* Add this line */
+      background-attachment: fixed; /* Add this line */
+      
+      color: rgba(255, 255, 255, 0.801);
+     
+    
+      
+    }
+  
+     h1{
+      margin: 0;
+      
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgba(87, 78, 79, 0.685);
+      font-weight: lighter;
+      padding-bottom: 20px;
+    text-align: center;
+    font-size: 38px;
+    
+    }
+   
+    .loginbox{
+   
+      width: 837px;
+      height: 662px;
+      top: 60.3%;
+      left: 68.9%;
+      color: #fff;
+      background: rgb(0, 0, 0);
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      padding: 42px;
+      }
+      .loginbox img[class="vis"]{
+        padding-top: 10px;
+        padding-left: 135px;
+        height: 50px;
+      }
+      
+      .loginbox img{
+        padding-top: 10px;
+        padding-left: 80px;
+        height: 50px;
+      }
+      .loginbox p{
+        padding-top: 20px;
+          font-size: 20px;
+          margin: 0;
+          color: rgba(112, 109, 104, 0.685);
+          padding-right: 0px;
+          margin-left: 130px;
+          font-weight:bold ;
+          margin-top: 18px;
+          margin-bottom: 7px;
+      }
+      .loginbox h6{
+        font-size: 12px;
+        color: rgb(136, 8, 29);
+        
+        padding-top: 5px;
+        padding-left: 50px;
+        padding-right: 100px;
+        margin-bottom: 0px;
+        font-weight: lighter
+      }
+      .form-group  input{
+          
+          margin-bottom: 07px;
+          
+      }
+      .form-group input[type = "text"]{
+        width: 310px;
+        margin-left: 53px;
+        margin-right: 70px;
+        padding-top:10px ;
+        margin-top: 35px;
+        border:0;
+      
+        border-bottom: 1px solid rgb(0, 0, 0);
+      background: rgba(255, 255, 255, 0.089);
+        
+        
+        outline: none;
+        height: 35px;
+        color: rgb(255, 255, 255);
+        font-size: 12px ;
+      }
+      
+      .form-group input[type = "text1"]{
+        width: 110px;
+        margin-left: 53px;
+        padding-top:10px ;
+        margin-top: 35px;
+        border:0;
+      
+        border-bottom: 1px solid rgb(0, 0, 0);
+      background: rgba(255, 255, 255, 0.089);
+        
+        
+        outline: none;
+        height: 35px;
+        color: rgb(255, 255, 255);
+        font-size: 12px ;
+      }
+      .form-group input[type = "text2"]{
+        width: 110px;
+        margin-left: 30px;
+        margin-right: 183px;
+        padding-top:10px ;
+        margin-top: 35px;
+        border:0;
+      
+        border-bottom: 1px solid rgb(0, 0, 0);
+      background: rgba(255, 255, 255, 0.089);
+        
+        
+        outline: none;
+        height: 35px;
+        color: rgb(255, 255, 255);
+        font-size: 12px ;
+      }
+      .form-group button[class = "btn btn-outline-success"]{
+        
+        margin-top: 30px;
+      margin-left: 272px;
+      border:none;
+      outline: none;
+      margin-right: 15px;
+      margin-bottom: 5px;
+      height: 35px;
+      width: 290px;
+      background: rgba(136, 8, 29, 0.808);
+      color: #fff;
+      font-size: 18px;
+     border-radius: 20px;
+      }
+    
+      .form-group button[class = "btn btn-outline-success"]:hover{
+        cursor: pointer;
+    background: #000000;
+    color: rgb(136, 8, 29);
+    }
+    
+      .loginbox a{
+          text-decoration: none;
+          margin-left: 132px;
+          font-size: 14px;
+          line-height: 20px;
+          color: darkgrey;
+      }
+    
+      .loginbox a:hover{
+          color: rgb(136, 8, 29);
+      }
+    .slidebox h2{
+      color: rgb(131, 8, 28);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+      padding-left: 0%;
+      padding-top: 0%;
+      margin-top: 0;
+      text-align: center;
+      font-size: 38.2px;
+    }
+    .slidebox h3{
+      color: rgba(119, 109, 109, 0.795);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+      padding-left: 0%;
+      padding-top: 0%;
+      
+      text-align: center;
+      font-size: 25px;
+    }
+    .slidebox p{
+      color: rgb(255, 255, 255);
+      font-size: 15.5px;
+      padding-top: -28px;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+      padding-left: 1%;
+      padding-top: 0%;
+    
+    }
+    .slidebox
+    {
+      width: 510px;
+      height: 662px;
+      top: 60.3%;
+      left: 18.8%;
+      
+      color: #fff;
+      background: rgb(0, 0, 0);
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      padding: 42px;
+     
+    }
+    .main{ 
+      margin-top: -0px;
+      margin-left: -3px;
+      height: 30vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    
+  
+    .slider{
+  
+      height: 140px;
+      width: 140px;
+      box-shadow: 0px 0px 20px #000;
+      overflow: hidden;
+    }
+  
+    .slider figure{
+      width: 500%;
+      height: 100%;
+      position: relative;
+      left: 0%;
+      
+    }
+  
+    .slider figure img{
+      width: 20%;
+      height: 100%;
+      float: left;
+    }

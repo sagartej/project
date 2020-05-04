@@ -1,0 +1,62 @@
+<div class="menu">
+  <a href="">
+    <img src="assets/image/uplogg.png">
+  </a>
+
+  <ul>
+
+
+
+
+  </ul>
+
+</div>
+
+<body>
+  <h1 [hidden]="!temp">YOUR TICKETS</h1><br>
+  <h2 [hidden]="temp">
+    No Bookings
+  </h2>
+  <div class="float-container">
+    <div class="float-child" *ngFor="let ticket of tickets">
+
+      <div class="pricing-table ">
+        <div class="pricing-header">
+          <div class="price"> <img src="assets/image/{{ticket.flight.photo}}"></div>
+          <div class="title">
+            <p>TICKET ID</p>
+            <h3>{{ticket.bookingId}}</h3>
+          </div>
+        </div>
+        <ul class="pricing-list">
+          <li><strong>AIRLINES</strong>
+            <h4>{{ticket.flight.airline}} </h4>
+          </li>
+          <div class="border"></div>
+          <li><strong>Passenger Boarding</strong>
+            <h4>{{ticket.pname}} {{ticket.plname}} </h4>
+          </li>
+          <div class="border"></div>
+          <li><strong>FROM</strong>
+            <h4>{{ticket.flight.source}} </h4>
+          </li>
+          <div class="border"></div>
+          <li><strong>TO</strong>
+            <h4>{{ticket.flight.desti}} </h4>
+          </li>
+          <div class="border"></div>
+          <li><strong>DEPARTURE</strong>
+            <h4>{{ticket.flight.dept}} </h4>
+          </li>
+          <div class="border"></div>
+          <li> <button class="btn btn-outline-success" (click)="cancel(ticket.bookingId,ticket.flight.fare)"
+              type="submit">CANCEL</button></li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <a href="profile">Back to services page</a>
+</body>
+

@@ -1,0 +1,88 @@
+<div class="menu">
+  <a href="">
+    <img src="assets/image/uplogg.png">
+  </a>
+
+  <ul>
+
+
+    <li><a href="aboutus">ABOUT US</a></li>
+    <li><a href="faqs">FAQs</a></li>
+    <li><a href="associates">ASSOCIATES</a></li>
+
+  </ul>
+
+</div>
+<div class="banner-text">
+  <div class="loginbox">
+
+    <h1>LOGIN</h1>
+    <br />
+
+    <form [formGroup]="loginForm" (ngSubmit)="verifyLogin()">
+      <div class="form-group">
+        <p>Email Address : </p>
+        <input type="email" class="form-control" formControlName="email" placeholder="Email Address" />
+        <!-- Predefined Structural directives -->
+        <!-- *ngIf,*ngFor,*ngSwitch -->
+        <div *ngIf="submitted && loginForm.controls.email.errors">
+          <div class="text-danger" *ngIf="loginForm.controls.email.errors.required">
+            <h6> Email is required </h6>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>Password : </p>
+        <input type="password" class="form-control" formControlName="password" placeholder="Password" />
+        <div *ngIf="submitted && loginForm.controls.password.errors">
+          <div class="text-danger" *ngIf="loginForm.controls.password.errors.required">
+            <h6> Password is required </h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-outline-success" type="submit">Go!</button>
+        <br>
+
+
+        <a href="signup">New to viman!</a><br>
+
+      </div>
+
+      <div *ngIf="invalidLogin">
+        <div class="text-danger">
+          <h6> Invalid Email or Password </h6>
+        </div>
+      </div>
+
+    </form>
+  </div>
+  <div class="slidebox">
+    <h2>HOW TO FLY SAFE AND ARRIVE WELL DURING COVID-19</h2>
+
+    <div class="main">
+
+
+      <div class="slider">
+
+        <figure>
+          <img src="assets/image/co1.jpeg">
+          <img src="assets/image/co2.jpeg">
+          <img src="assets/image/co3.jpeg">
+          <img src="assets/image/co4.jpeg">
+          <img src="assets/image/co5.jpeg">
+
+
+
+
+        </figure>
+
+      </div>
+    </div>
+    <p>Focusing on air travel however , as with any flu season, there are precautions you can take
+      to minimize your risk of becoming unwell . You can use all these precautions in order to minimizespread of
+      disease. </p>
+  </div>
+
+</div>
